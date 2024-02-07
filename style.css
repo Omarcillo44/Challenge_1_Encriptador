@@ -1,0 +1,98 @@
+#imagen_fondo{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: -1;
+}
+
+#imagen_fondo2{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.contenedores{
+    width: 100%; /*Tamaño completo del area de texto y botones*/
+    text-align: center;
+}
+
+.contenedores li{
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.contenedor textarea{
+    text-transform: lowercase;
+    width: 75%;
+    height: 400px;
+    margin: 10% 0 10% 0;
+    padding: 5% 5%;
+    resize: none;
+    cursor: unset;
+    font-size: 2em;
+    background-color: black;
+    border-width: 2px;
+    border-radius: 10px;
+    outline: none;
+    opacity: 85%;
+}
+
+#txt_encriptar{
+    color: limegreen;
+}
+
+#txt_desencriptar{
+    color: #00D1FF;
+}
+
+
+#txt_encriptar::placeholder{
+    color: mediumseagreen;
+}
+
+#txt_desencriptar::placeholder{
+    color: lightskyblue;
+}
+
+.contenedor button{
+    width: auto;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: black;
+    opacity: 90%;
+    border-width: 2px;
+    border-radius: 10px;
+    color: white;
+    font-size: 2em;
+}
+
+#btn_encriptar, #txt_encriptar{
+    border-color: #009B03;
+}
+
+#btn_desencriptar, #txt_desencriptar{
+    border-color: royalblue;
+}
+
+#btn_encriptar{
+    box-shadow: 0 0 20px 5px limegreen;
+}
+
+#btn_desencriptar{
+    box-shadow: 0 0 20px 5px dodgerblue;
+}
+
+#btn_encriptar:disabled{
+    color: lightgrey;
+    border-color: black;
+    box-shadow: 0 0 20px 5px darkgreen;
+}
+
+#btn_desencriptar:disabled{
+    color: lightgrey;
+    border-color: black;
+    box-shadow: 0 0 20px 5px darkcyan;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-419">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style_reset.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Encriptador</title>
+    </head>
+
+    <div id="fondo">
+        <video src="recursos_multimedia/video_fondo.mp4" id="imagen_fondo" autoplay="autoplay" muted="muted" loop="loop"></video>
+    </div>
+    <body>
+
+        <main>
+            <ul class="contenedores">
+
+                <li>
+                    <div class="contenedor" id="cont_encriptar">
+                        <label>
+                            <textarea readonly id="txt_encriptar" oninput="pasarTexto();" onclick="copiarAlPortapapeles();" placeholder="texto a encriptar..."></textarea>
+                        </label>
+                        <button id="btn_encriptar" onclick="iniciar_encriptacion()">Encriptar</button>
+                    </div>
+                </li><li>
+                    <div class="contenedor" id="cont_desencriptar">
+                        <label>
+                            <textarea readonly id="txt_desencriptar" oninput="pasarTexto();" onclick="copiarAlPortapapeles();" placeholder="texto a desencriptar..."></textarea>
+                        </label>
+                        <button id="btn_desencriptar"  onclick="iniciar_desencriptacion()">Desencriptar</button>
+                    </div>
+                </li>
+
+            </ul>
+        </main>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
